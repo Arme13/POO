@@ -5,6 +5,7 @@
  */
 package poo;
 
+import Clases.Alumno;
 import Clases.Audifonos;
 import Clases.Bebida;
 import Clases.Carro;
@@ -95,7 +96,8 @@ public class POO {
         
         Pluma pluma1 = new Pluma("BIC", "Morado", 10);
         
-        
+        Alumno alumn = new Alumno();
+        System.out.println((alumn.isRegular()));
         
     }
     
