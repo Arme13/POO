@@ -47,5 +47,32 @@ public class Videojuego {
     public void setPrecio(int precio){
         this.precio= precio;
     }
-    
+
+    @Override
+    public String toString() {
+        return "Tu videojuego es: "+ nombre +" de genero: "+ genero;
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 3;
+        hash = 37 * hash + this.precio;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Videojuego other = (Videojuego) obj;
+        if (this.precio != other.precio) {
+            return false;
+        }
+        return true;
+    }
+
 }

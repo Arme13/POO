@@ -48,6 +48,9 @@ public class POO {
         Circulo circ = new Circulo(5, 2.5, "Rojo");
         
         Videojuego juego = new Videojuego("Battle Royale", "PUBG", 600);
+        Videojuego juegazo = new Videojuego("Shooter", "COD", 600);
+        System.out.println(juego.toString());
+        System.out.println(juegazo.equals(juego));
         
         Consola consola1 = new Consola("Nintendo", "Nintendo Switch", 6500);
        
